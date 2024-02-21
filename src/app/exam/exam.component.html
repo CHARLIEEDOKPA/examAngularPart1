@@ -1,0 +1,24 @@
+<h1>Register employee</h1>
+<form [formGroup]="formEmployee" (ngSubmit)="addEmployee()">
+  <div class="field">
+    <label for="">Name</label>
+    <input type="text" name="" id="" formControlName="name" />
+  </div>
+  <div class="field">
+    <label for="">Age: </label>
+    <input type="text" name="" id="" formControlName="age" />
+  </div>
+  <div class="field">
+    <label for="">Position: </label>
+    <input type="text" name="" id="" formControlName="position" />
+  </div>
+  <div class="field">
+    <label for="">Salary: </label>
+    <input type="text" name="" id="" formControlName="salary" />
+  </div>
+  <div class="field">
+    <label for="">Commission: </label>
+    <input type="text" name="" id="" formControlName="commission" />
+  </div>
+  <input type="submit" value="Register" [disabled]="!formEmployee.valid">
+</form>

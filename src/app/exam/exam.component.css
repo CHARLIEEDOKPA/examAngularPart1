@@ -1,0 +1,8 @@
+.field {
+    padding: 10px;
+}
+
+input[type=text].ng-invalid {
+    background-color: red;
+    color: white;
+}
